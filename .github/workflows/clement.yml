@@ -5,10 +5,10 @@ on:
 
 jobs:
     job2:
-        runs-on: ubutunu-latest
+        runs-on: ubuntu-latest
         steps:
             - name : ububu
-              run: echo "googoo sgaga"
+              run: echo "googoo gaga"
     job1:
         runs-on: windows-latest
         needs: [job2]
