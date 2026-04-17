@@ -4,8 +4,14 @@ on:
         branches: [main]
 
 jobs:
+    job2:
+        runs-on: ubutunu-latest
+        steps:
+            - name : ububu
+              run: echo "googoo sgaga"
     job1:
         runs-on: windows-latest
+        needs: [job2]
         steps:
             - name: My awesome step
               run: mkdir app
